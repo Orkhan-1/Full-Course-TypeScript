@@ -11,8 +11,8 @@ function greetUser() {
   console.log(greeting + ", " + userName + "! Welcome to " + appName);
 
   if (true) {
-    var greeting = "Hi"; // still changes the outer 'greeting' due to function scope
-    let userName = "Bob"; // block-scoped: different from outer userName
+    var greeting = "Hi"; 
+    let userName = "Bob"; 
     console.log(greeting + ", " + userName); // Hi, Bob
   }
 

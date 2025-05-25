@@ -6,9 +6,9 @@ type Person = {
 
 // Use the custom type
 let user: Person = {
-  name: "Alice",
+  name: "Orkhan",
   age: 30,
 };
 
-console.log(user.name); // Alice
+console.log(user.name); // Orkhan
 console.log(user.age);  // 30
