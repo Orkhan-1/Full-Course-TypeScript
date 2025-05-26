@@ -7,17 +7,17 @@ let age: number = 25;
 let price = 99.99; // inferred as number
 
 // string
-let firstName: string = "Thea";
-let greeting = `Hello, ${firstName}`; // template string
+let firstName: string = "Orkhan";
+let greeting = `Hello, ${firstName}`;
 
 // boolean
 let isOnline: boolean = true;
 let isLoading = false; // inferred as boolean
 
-// any (not recommended for most cases)
+// any (not recommended)
 let randomValue: any = 42;
 randomValue = "Now I'm a string";
-randomValue = true; // TS allows anything here
+randomValue = true;
 
 console.log(age, price, firstName, greeting, isOnline, randomValue);
 
@@ -25,11 +25,9 @@ console.log(age, price, firstName, greeting, isOnline, randomValue);
 // ARRAYS & TUPLES
 // ==============================
 
-// array of numbers
+//arrays
 let scores: number[] = [90, 85, 100];
-
-// array of strings
-let names: string[] = ["Alice", "Bob", "Charlie"];
+let names: string[] = ["Orkhan", "Bob"];
 
 // tuple (fixed-length array with specific types)
 let user: [string, number] = ["Orkhan", 30];
@@ -86,18 +84,3 @@ console.log(emptyValue, notAssigned);
 function throwError(): never {
   throw new Error("Something went wrong!");
 }
-
-// Uncomment to test (will crash the script)
-// throwError();
-
-// ==============================
-// TYPE INFERENCE VS EXPLICIT TYPING
-// ==============================
-
-// inferred as string
-let language = "TypeScript";
-
-// explicitly typed
-let version: number = 4.5;
-
-console.log(language, version);
